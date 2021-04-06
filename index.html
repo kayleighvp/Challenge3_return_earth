@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kayleigh-Challenge3</title>
+		<script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+		<script src="javascript/main.js" defer></script>
+		<script src="javascript/activiteiten.js" defer></script>
+		<link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+		<link href="styles.css" rel="stylesheet" />
+		<!-- om geocode te kunnen gebruiken onderstaande links erbij -->
+		<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+		<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
+		<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+	</head>
+	<body>
+		<div id="balk"> 
+			<img src="images/logo.png" alt="logo of spacex" title="spacex" class="logo"/>
+			<img src="images/profiel.png" alt="picture of hamster" title="hamster profile" class="profiel"/>
+			</div>
+		<div class="intro">
+			<h1> Welcome passenger! </h1>
+			<p>We are heading back to Earth.Use the map and searchbar to find more information about the landingspots, weather, hotels and activities in the surroundings. Besides that there is a clock to give you a sense of time on earth.  </p>
+		</div>
+		<div id="map"></div>
+		<div id="knoppen">
+			<nav>
+				<a href="#" id="knop1">Headquarter</a>
+				<a href="#" id="knop2">Landing spot 1</a>
+				<a href="#" id="knop3">Landing spot 2</a>
+				<a href="#" id="knop4">Hotel spot 1</a>
+				<a href="#" id="knop5">Hotel spot 2</a>	
+			</nav>
+		</div>
+		<div>
+            <span id="longSpan"></span>
+			<span id="latSpan"></span>
+		<div id="weer">
+            <h2> Current Weather</h2>
+			<p> Use the search bar for specific weather information.<p>
+		<div id="geocoder"></div>
+		<br/>
+		<div id="weather"></div>
+		</div>	
+		</div>
+		<div class="klokblok">
+			<h2> Current time</h2>
+			<p>This is based on central European summer time.</p>
+		<br/>
+		<div class="klok">
+			<p id="tijd"></p>
+		</div>
+		</div>
+	</body>
+</html>
